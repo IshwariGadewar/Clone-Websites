@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exe 6</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        ::selection{
+            background-color: rgb(39, 179, 230);
+            color: white;
+        }
+        header{
+            /* border: 1px solid black;
+            margin: 0 155px;
+            height: 100px; */
+            margin: 20px;
+        }
+        .logo img{
+            width: 176px;
+            height: 56px;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .right ul{
+            display: flex;
+            gap: 35px;
+        }
+        .right ul li{
+            list-style: none;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+        }
+        ul li a{
+            text-decoration: none;
+            cursor: pointer;
+            color: rgb(112, 112, 112);
+        }
+        a:hover{
+            color: rgb(179, 177, 177);
+        }
+        .first{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 43px;
+            margin: 70px;
+            font-family: sans-serif;
+        }
+        .first span{
+            margin-top: 10px;
+            font-size: 48px;
+        }
+        .first p{
+            font-size: 23px;
+            width: 57vw;
+            text-align: center;
+        }
+        .first button{
+            background-color: rgb(33, 202, 202);
+            color: white;
+            padding: 14px 16px;
+            border: none;
+            border-radius: 6px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        .flex{
+            width: 67vw;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .second{
+            display: flex;
+            flex-direction: column;
+            /* justify-content:center;
+            align-items:end; */
+        }
+        .flex img{
+            margin-right: 15px;
+        }
+        .flex2{
+            display: flex;
+            align-items:first baseline;
+        }
+        .grid{
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            margin: 0 280px;
+            grid-template-columns: 280px 280px 280px;
+            column-gap: 25px;
+            row-gap: 20px;
+        }
+        .item{
+            border: none;
+            background-color: rgb(246, 246, 245);
+            width: 280px;
+            height: 130px;
+            margin: 5px ;
+            border-radius: 7px;
+            text-align: center;
+            padding-top: 20px;
+            font-weight: 700;
+            font-size: 20px;
+        }
+        .blue{
+            background-color: rgb(56, 183, 221);
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 6px;
+            margin-top: 50px;
+            cursor: pointer;
+        }
+        .green{
+            background-color: rgb(56, 221, 64);
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 6px;
+            margin-top: 50px;
+            cursor: pointer;
+        }
+        .third{
+            background-color: black;
+            color: white;
+            width: 99vw;
+            height: 107vh;
+        }
+        .thf{
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            grid-template-columns: 330px 330px;
+            margin-left: 380px;
+            column-gap: 200px;
+        }
+        .subscribe{
+            margin-top: 80px;
+            border: none;
+            border-radius: 10px;
+            padding-top: 20px;
+            width: 330px;
+            height: 250px;
+            background-color: white;
+            text-align: center
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp" style="cursor: pointer;">
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Products</a> &nbsp <img src="arrow-down.1024x553.png" height="5px"></li>
+                    <li><a href="/">Pricing</a> &nbsp <img src="arrow-down.1024x553.png" height="5px"></li>
+                    <li><a href="/">Resources</a> &nbsp <img src="arrow-down.1024x553.png" height="5px"></li>
+                    <li><a href="/">About us</a> &nbsp <img src="arrow-down.1024x553.png" height="5px"></li>
+                    <li><a href="/">Security and compliance</a></li>
+                    <li><img src="https://iconduck.com/icons/305510/english-to-chinese?shared"></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="first">
+            <span>Download <b>UltraEdit</b> for Windows <a><img src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png" width="112" height="32" style="cursor: pointer;"></a></span>
+            <p>
+                Download and try UltraEdit before you buy it! This download includes the full Windows version of the text editor.
+            </p>
+            <div>
+                <button>DOWNLOAD MAC OR LINUX VERSION</button>
+            </div>
+        </section>
+
+        <section class="second">
+            <div class="flex">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTeWKHUrQ1iYLjzVA-kZBDz2n_RkCPlxXauuqQ3mPW9_kEhonzD" width="50" height="50">
+                 <div class="flex2">
+                    <div style="font-size: 24px;font-family: sans-serif;">Download UltraEdit</div> 
+                    <div style="font-size:13px;margin-left:10px;">v2023.2(released 2023/12/15) | Hotfix</div>
+                 </div>
+            </div>
+
+            <div class="grid">
+                <div class="item">
+                    <div class="item-lang">English</div>
+                    <button class="btn blue">Download 32-bit</button>
+                    <button class="btn green">Download 64-bit</button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">Deutsch</div>
+                    <button class="btn blue">Download 32-bit</button>
+                    <button class="btn green">Download 64-bit</button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">Italiano</div>
+                    <button class="btn blue">Download 32-bit</button>
+                    <button class="btn green">Download 64-bit</button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">Espanol</div>
+                    <button class="btn blue">Download 32-bit</button>
+                    <button class="btn green">Download 64-bit</button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">francais</div>
+                    <button class="btn blue">Download 32-bit</button>
+                    <button class="btn green">Download 64-bit</button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">Portugues brasileiro</div>
+                    <button class="btn blue">Download 32-bit</button>
+                    <button class="btn green">Download 64-bit</button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">Japanese</div>
+                    <button class="btn blue">Download 32-bit</button>
+                    <button class="btn green">Download 64-bit</button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">Korean</div>
+                    <button class="btn blue">Download 32-bit</button>
+                    <button class="btn green">Download 64-bit</button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">Chinese</div>
+                    <button class="btn blue">Download 32-bit</button>
+                    <button class="btn green">Download 64-bit</button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">Traditional Chinese</div>
+                    <button class="btn blue">Download 32-bit</button>
+                    <button class="btn green">Download 64-bit</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="third">
+            <div class="thf">
+                <div class="join">
+                    <div style="margin-top:190px;font-size:30px;width:450px;text-align: center;">
+                        Join the UltraEdit newsletter
+                    </div>
+                    <div style="width:500px;text-align: center;margin-top: 20px;font-size:17px;">
+                        Sign up for our newsletter and receive emails for the latest news, blogs, and special deals on UltraEdit.
+                    </div>
+                </div>
+                <div class="subscribe">
+                    <h3 style="color: aqua;font-size: 25px;margin:20px;">Subscribe to our emails</h3>
+                    <label for="email" style="color: black;font-size: 15px;">Enter email address</label>
+                    <div>
+                        <input type="email" style="width: 280px;height:45px;margin-bottom: 10px;border-color: rgb(194, 192, 192);border-style: solid;">
+                    </div>
+                    <button style="width: 280px;height:45px;background-color: aqua;border: none;border-radius: 7px;">SIGN UP</button>
+                </div>
+            </div>
+            <div style="display:grid;justify-items:left;margin-left:290px;margin-top:100px;">
+                <div style="font-size:25px;margin-bottom: 15px;">
+                    EXE or MSI?
+                </div>
+                <div style="width: 870px;">
+                    The EXE builds of our products are the preferred download for most of our users, running Windows 8.1 and later.
+                    We make MSI builds available for bulk or silent deployments (command line, GPO, SCCM, etc.).<a href="/" style="color: rgb(22, 137, 226);text-decoration: none;line-height: 40px;"> Get the UltraEdit MSI installer.</a>
+                </div>
+                <div style="font-size:25px;margin-top: 25px;margin-bottom: 15px;">
+                    Free trial period
+                </div>
+                <div style="width: 870px;line-height:30px;">
+                    This application comes with a free, fully functional 30 day trial period. After the trial period expires, you must purchase a license to continue using it.
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div style="position:fixed;bottom:0;left:10px;color:white;border-radius:0 6px;font-size: 13px;text-align: center;padding-top: 5px;background-color: black;width:150px;height:20px;">
+            <a href="/" style="text-decoration: none;color:white">COOKIE SETTING</a>
+        </div>
+        <div class="grid2">
+            
+        </div>
+    </footer>
+</body>
+</html>

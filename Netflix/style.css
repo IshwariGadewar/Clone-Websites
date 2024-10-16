@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+
+:root{
+    font-family: sans-serif;
+}
+
+.main{
+    background-image: url("assests/images/background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px , 100vw);
+    height: 110vh;
+    object-fit: cover;
+    position: relative;
+}
+
+.main .box{
+    background-color: black;
+    position: absolute;
+    top: 0;
+    opacity: 0.70;
+    height: 110vh;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    max-width: 80vw;
+    margin: auto;
+    justify-content: space-between;
+}
+
+nav .SignIn{
+    background-color: red;
+    margin: 26px 10px;
+    color:white;
+    font-weight: bold;
+    width: 87px;
+    height: 38px;
+    padding:5px 10px;
+    border-radius:7px;
+    border: none;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.lang{
+    position: relative;
+    z-index: 10;
+    color: white;
+    background-color: transparent;
+    border: 3px solid rgba(255, 255, 255, 0.868);
+    border-radius: 4px;
+    height: 36px;
+    padding: 8px 10px;
+    width: 120px;
+    font-weight: bold;
+    border: solid 1px white;
+    text-align: center;
+}
+.lang:hover{
+    color: black;
+}
+
+.hero{
+    display: flex;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap : 18px;
+    padding: 0 10px;
+    margin-top: 53px;
+}
+
+.hero> :nth-child(1){
+    font-size: 28px;
+    max-width: 600px;
+    /*height: 100px; */
+    text-align: center;
+    font-weight: bolder;
+}
+
+.hero :nth-child(2){
+    font-size:17px;
+    font-weight: 400;
+    text-align: center; 
+} 
+
+.hero :nth-child(3){
+    font-size:17px;
+    width: 508px;
+    text-align: center;
+}
+
+.sep{
+    /* max-width:100%;  */
+    height: 100px;
+    width: 90vw;
+    position:relative;
+    margin: auto;
+    z-index: 2; 
+    border-top: solid 5px ;
+    border-color: rgb(249, 47, 47) transparent transparent transparent;
+    border-radius: 100%/100px 100px 0px 0px;
+    opacity:0.8;
+    background: linear-gradient(to bottom, rgb(23, 23, 131),black,transparent);
+}
+
+.main .hero .enteremail{
+    height: 55px;
+    width: 390px;
+    align-items: center;
+    border: 1px solid rgb(119, 115, 115);
+    border-radius: 9px;
+    font-size: 19px;
+    padding-left: 15px;
+}
+
+.main .hero .getStarted{
+    background-color: red;
+    font-size: 23px;
+    color: white;
+    padding: 3px 8px;
+    font-weight: bold;
+    height: 56px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.movies{
+    display: flex;
+    flex-direction: column;
+    max-width: 80vw;
+    margin: auto;
+    font-size: 1.5rem;
+    margin-top: 80px;
+}
+
+.cs{
+    background-color: transparent;
+    font-size: 17px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    height: 40px;
+    margin: 18px 0px;
+    /* box-sizing: border-box; */
+}
+
+.movie img{
+    border-radius: 7px;
+    /* margin: 18px 23px; */
+}
+
+.movie{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 19%;
+    gap: var(--size-2);
+    overflow-x: scroll;
+    overscroll-behavior-inline: contain;
+}
+
+.more{
+    margin: auto;
+    max-width: 80vw;
+    margin-top: 60px;
+}
+
+.more .reasons{
+    display: flex;
+}
+
+.reason{
+    padding: 28px 10px;
+    color: white;
+    height:inherit;
+    width: 300px;
+    margin: 0 10px;
+    border-radius: 7px;
+    background: linear-gradient(to bottom , rgb(37, 14, 115),rgb(65, 3, 65));
+}
+
+.reason p{
+    color: rgb(192, 191, 190);
+    font-size: 17px;
+}
+
+.ques{
+    margin: auto;
+    max-width: 80vw;
+    margin-top: 60px;
+}
+
+.question{
+    height: 30px;
+    width: 970px;
+    background-color: rgb(57, 57, 57);
+    color: white;
+    margin: 10px 0;
+    padding: 23px 15px;
+    font-size: 25px;
+}
+
+.question:hover {
+    background-color: rgb(73, 73, 73);
+    color: white;
+    cursor: pointer;
+  }
+
+.end{
+    color: white;
+    max-width: 80vw;
+    margin: auto;
+    margin-top: 75px;
+}
+
+.last{
+    display: flex;
+    flex-direction: row;
+    max-width:78vw;
+    margin: auto;
+}
+
+.inLast{
+    margin-top: 20px;
+    width: 300px;
+    color:white;
+}
+
+.inLast a{
+    color: rgb(165, 165, 165);
+    font-size: 15px;
+}
